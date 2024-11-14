@@ -1,0 +1,158 @@
+
+.content-wrapper {
+  max-width: 855px; 
+  margin: 0 auto; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: center;  
+}
+
+.header {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: center; 
+  width: 100%; 
+  max-width: 1152px;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.header-content__wrapper {
+  width: 100%;
+  max-width: 855px;
+  display: flex;
+  gap:106px;
+}
+
+.header-image {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+  flex-shrink: 0; 
+}
+
+.header-image img {
+  width: 100%; 
+  height: auto; 
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  text-align: left;
+}
+
+.header-text h1 {
+  margin-top: 18px;
+  font-family: Heebo;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  color: #21243D;
+  margin-bottom: 0;
+}
+
+.header-text p {
+  margin-top: 40px;
+  font-family: Heebo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+  text-align: left;
+  color: #21243D;
+  ;  
+}
+
+.download-btn {
+  margin-top: 47px;
+  display: flex;
+  background: #FF6464;
+  width: 100%; 
+  max-width: 208px; 
+  height: 47px;
+  justify-content: center; 
+  align-items: center;
+  border: 0;
+  border-radius: 2px;
+}
+
+.download-btn a{
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #FF4B4B; 
+}
+
+@media (max-width: 625px) {
+
+  .header{
+    margin-top: 33px;
+  }
+
+  .content-wrapper{
+    max-width: 354px;
+  }
+
+  .header-content{
+   
+    align-items: center;
+  }
+
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content__wrapper {
+    flex-direction: column-reverse; 
+    gap: 34px;
+  }
+
+  .header-text {
+    margin-top: 0;
+  }
+
+  .header-text h1 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  }
+  
+  .header-text p {
+    box-sizing: border-box;
+    margin-top: 27px;
+    font-size: 16px;
+    line-height: 23.5px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-image{
+    margin: 0 auto;
+  }
+
+  .header-image img {
+    max-width: 180px;
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+  }
+}

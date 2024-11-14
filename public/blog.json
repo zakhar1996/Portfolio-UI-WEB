@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Making a design system from scratch",
+    "content": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "author": "Design, Pattern",
+    "date": "2024-11-09"
+  },
+  {
+    "id": 2,
+    "title": "Creating pixel perfect icons in Figma",
+    "content": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "author": "Figma, Icon Design",
+    "date": "2024-11-08"
+  },
+  {
+    "id": 3,
+    "title": "Blog Post 3",
+    "content": "This is the content of the third blog post.",
+    "author": "Alice Smith",
+    "date": "2024-11-07"
+  }
+]
+
