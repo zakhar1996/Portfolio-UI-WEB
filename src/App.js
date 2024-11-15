@@ -9,47 +9,40 @@ import WorkPage from './work/WorkPage';  // Компонент для відоб
 import WorkDetail from './work/WorkDetail';
 import Footer from './components/Footer/Footer';
 
+
 const App = () => {
   const location = useLocation(); // Отримуємо поточний шлях
-
-  // Список шляхів, на яких не потрібно відображати Header
-  const excludedPaths = [
-    '/all-blogs', 
-    '/works', 
-    '/blog', 
-    '/works/:id', 
-    '/blog/:id'
-  ];
-
-  // Перевіряємо, чи поточний шлях в списку виключених
-  const isExcludedPath = excludedPaths.some(path => location.pathname.startsWith(path));
 
   return (
     <div>
       <NavigationMenu />
-      {/* Відображаємо Header тільки на певних сторінках */}
-      {!isExcludedPath && <Header />}
-      
+      {/* Відображаємо Header тільки на головній сторінці та індивідуальних блогах */}
+      {!(
+  location.pathname === '/all-blogs' || 
+  location.pathname === '/works' || 
+  location.pathname.startsWith('/works/') || 
+  location.pathname.startsWith('/blog/')
+) && <Header />}
+
+
+
       <main>
         <Routes>
           {/* Маршрути для блогу */}
           <Route path="/" element={<><BlogHome /><WorkPage /></>} />
           <Route path="/all-blogs" element={<AllBlogs />} />
           <Route path="/blog/:id" element={<Blog />} />
-
-          {/* Маршрути для робіт */}
           <Route path="/works" element={<WorkPage />} /> {/* Одна компонента для частини вакансій та всіх вакансій */}
           <Route path="/works/:id" element={<WorkDetail />} /> {/* Деталі конкретної вакансії */}
         </Routes>
+        <Footer/>
       </main>
-
-      <Footer />
+   
     </div>
   );
 };
 
 export default App;
-
 
 
 

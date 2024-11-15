@@ -8,7 +8,7 @@ const BlogHome = () => {
 
   useEffect(() => {
     // Завантаження даних з blog.json
-    fetch('/blog.json')
+    fetch(process.env.PUBLIC_URL + '/blog.json')
       .then(response => response.json())
       .then(data => setBlogs(data))
       .catch(error => console.log(error));

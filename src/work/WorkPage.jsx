@@ -7,7 +7,7 @@ const WorkPage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    fetch("./works.json") 
+    fetch(process.env.PUBLIC_URL + "/works.json")
       .then((response) => response.json())
       .then((data) => setWorks(data))
       .catch((error) => console.error("Error", error));
