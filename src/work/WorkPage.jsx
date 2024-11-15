@@ -32,7 +32,7 @@ const WorkPage = () => {
               <Link to={`/works/${work.id}`} className="work-link">
                 <div className="work-content">
                   <img
-                    src={work.image}
+                    src={process.env.PUBLIC_URL + '/images/' + work.image} 
                     alt={work.title}
                     className="work-image"
                   />
