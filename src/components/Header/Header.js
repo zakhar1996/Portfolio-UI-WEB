@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link } from 'react-router-dom'; 
 import './Header.css'; 
 import myImage from '../../assets/images/path_to_image.png'; 
 

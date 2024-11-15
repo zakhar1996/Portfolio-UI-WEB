@@ -1,15 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';  
 import App from './App';
-import { HashRouter } from 'react-router-dom'; // Замініть BrowserRouter на HashRouter
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <HashRouter> {/* Використовуємо HashRouter замість BrowserRouter */}
-      <App />
-    </HashRouter>
-  </React.StrictMode>
+ReactDOM.render(
+  <HashRouter> 
+    <App />
+  </HashRouter>,
+  document.getElementById('root')
 );
-

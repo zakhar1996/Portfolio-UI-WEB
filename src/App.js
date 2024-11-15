@@ -10,22 +10,18 @@ import WorkDetail from './work/WorkDetail';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-
-
 const App = () => {
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <div>
       <NavigationMenu />
       {!(
-  location.pathname === '/all-blogs' || 
-  location.pathname === '/works' || 
-  location.pathname.startsWith('/works/') || 
-  location.pathname.startsWith('/blog/')
-) && <Header />}
-
-
+        location.pathname === '/all-blogs' || 
+        location.pathname === '/works' || 
+        location.pathname.startsWith('/works/') || 
+        location.pathname.startsWith('/blog/')
+      ) && <Header />}
 
       <main>
         <Routes>
@@ -33,12 +29,11 @@ const App = () => {
           <Route path="/" element={<><BlogHome /><WorkPage /></>} />
           <Route path="/all-blogs" element={<AllBlogs />} />
           <Route path="/blog/:id" element={<Blog />} />
-          <Route path="/works" element={<WorkPage />} /> 
-          <Route path="/works/:id" element={<WorkDetail />} /> 
+          <Route path="/works" element={<WorkPage />} />
+          <Route path="/works/:id" element={<WorkDetail />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </main>
-   
     </div>
   );
 };

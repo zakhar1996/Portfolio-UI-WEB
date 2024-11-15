@@ -7,7 +7,7 @@ const WorkPage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    fetch("/works.json")
+    fetch(process.env.PUBLIC_URL + "/works.json")
       .then((response) => response.json())
       .then((data) => setWorks(data))
       .catch((error) => console.error("Error", error));
@@ -31,7 +31,7 @@ const WorkPage = () => {
               <Link to={`/works/${work.id}`} className="work-link">
                 <div className="work-content">
                   <img
-                    src={work.image} 
+                    src={ process.env.PUBLIC_URL + work.image} 
                     alt={work.title}
                     className="work-image"
                   />
