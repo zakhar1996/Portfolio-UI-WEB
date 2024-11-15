@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Portfolio-UI-WEB/static/css/main.16c8f71b.css",
+    "main.js": "/Portfolio-UI-WEB/static/js/main.c8bc29de.js",
+    "static/media/path_to_image.png": "/Portfolio-UI-WEB/static/media/path_to_image.7af4d709b1394e59dfb4.png",
+    "index.html": "/Portfolio-UI-WEB/index.html",
+    "main.16c8f71b.css.map": "/Portfolio-UI-WEB/static/css/main.16c8f71b.css.map",
+    "main.c8bc29de.js.map": "/Portfolio-UI-WEB/static/js/main.c8bc29de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16c8f71b.css",
+    "static/js/main.c8bc29de.js"
+  ]
+}
