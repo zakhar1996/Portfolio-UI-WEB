@@ -10,7 +10,8 @@ const NavigationMenu = () => {
   };
 
   return (
-    <div className="header-nav__wrapper">
+  <div className="header-nav__wrapper">
+    <div className="header-nav__wrapper2">
       <nav className="header-nav">
         {/* Бургер-меню */}
         <button className="burger-menu" onClick={toggleMenu}>
@@ -38,6 +39,7 @@ const NavigationMenu = () => {
           </li>
         </ul>
       </nav>
+    </div>
     </div>
   );
 };

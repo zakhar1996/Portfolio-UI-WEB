@@ -8,6 +8,8 @@ import NavigationMenu from './components/Header/NavigationMenu';
 import WorkPage from './work/WorkPage';  
 import WorkDetail from './work/WorkDetail';
 import Footer from './components/Footer/Footer';
+import './App.css';
+
 
 
 const App = () => {
