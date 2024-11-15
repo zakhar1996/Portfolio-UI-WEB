@@ -44,7 +44,7 @@ const WorkDetail = () => {
           <p className="work-details-work-author">{work.author}</p>
         </div>
         <p className="work-details-description">{work.description}</p>
-        <img src={process.env.PUBLIC_URL + '/images/' + work.image} alt={work.title} className="work-details-image" />
+        <img src={process.env.PUBLIC_URL + work.image} alt={work.title} className="work-details-image" />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const BlogHome = () => {
   const [blogs, setBlogs] = useState([]);
-  const navigate = useNavigate(); // Ініціалізація навігатора
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     // Завантаження даних з blog.json
@@ -15,7 +15,7 @@ const BlogHome = () => {
   }, []);
 
   const handleViewAll = () => {
-    navigate('/all-blogs'); // Перенаправлення на сторінку з усіма постами
+    navigate('/all-blogs'); 
   };
 
   const handleClickBlog = (id) => {
@@ -35,7 +35,7 @@ const BlogHome = () => {
               <li 
                 key={blog.id} 
                 className="blog-home__item" 
-                onClick={() => handleClickBlog(blog.id)} // Додано обробник кліку
+                onClick={() => handleClickBlog(blog.id)} 
               >
                 <h2 className="blog-home__item-title">{blog.title}</h2>
                 <div className="blog-home__item-meta">

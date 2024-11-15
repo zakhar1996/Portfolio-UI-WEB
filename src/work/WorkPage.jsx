@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./WorkPage.css"; // Додаємо імпорт стилів
+import "./WorkPage.css"; 
 
 const WorkPage = () => {
   const [works, setWorks] = useState([]);
@@ -13,7 +13,6 @@ const WorkPage = () => {
       .catch((error) => console.error("Error", error));
   }, []);
 
-  // Перевіряємо, чи користувач на сторінці всіх вакансій або на головній
   const isAllWorksPage = location.pathname === "/works";
 
   return (
@@ -32,7 +31,7 @@ const WorkPage = () => {
               <Link to={`/works/${work.id}`} className="work-link">
                 <div className="work-content">
                   <img
-                    src={process.env.PUBLIC_URL + '/images/' + work.image} 
+                    src={process.env.PUBLIC_URL + work.image} 
                     alt={work.title}
                     className="work-image"
                   />

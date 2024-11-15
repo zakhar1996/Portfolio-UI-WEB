@@ -5,18 +5,17 @@ import AllBlogs from './components/Blog/AllBlogs';
 import Blog from './components/Blog/Blog';
 import Header from './components/Header/Header';
 import NavigationMenu from './components/Header/NavigationMenu';
-import WorkPage from './work/WorkPage';  // Компонент для відображення робіт
+import WorkPage from './work/WorkPage';  
 import WorkDetail from './work/WorkDetail';
 import Footer from './components/Footer/Footer';
 
 
 const App = () => {
-  const location = useLocation(); // Отримуємо поточний шлях
+  const location = useLocation(); 
 
   return (
     <div>
       <NavigationMenu />
-      {/* Відображаємо Header тільки на головній сторінці та індивідуальних блогах */}
       {!(
   location.pathname === '/all-blogs' || 
   location.pathname === '/works' || 
@@ -32,8 +31,8 @@ const App = () => {
           <Route path="/" element={<><BlogHome /><WorkPage /></>} />
           <Route path="/all-blogs" element={<AllBlogs />} />
           <Route path="/blog/:id" element={<Blog />} />
-          <Route path="/works" element={<WorkPage />} /> {/* Одна компонента для частини вакансій та всіх вакансій */}
-          <Route path="/works/:id" element={<WorkDetail />} /> {/* Деталі конкретної вакансії */}
+          <Route path="/works" element={<WorkPage />} /> 
+          <Route path="/works/:id" element={<WorkDetail />} /> 
         </Routes>
         <Footer/>
       </main>

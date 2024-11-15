@@ -4,6 +4,10 @@
   padding-bottom: 32px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .blog-home-wrapper::before {
   content: "";
   position: absolute;

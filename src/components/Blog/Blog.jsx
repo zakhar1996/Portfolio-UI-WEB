@@ -7,7 +7,6 @@ const Blog = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    // Завантаження даних з blog.json, враховуючи правильний шлях
     fetch(process.env.PUBLIC_URL + "/blog.json")
       .then((response) => response.json())
       .then((data) => {
